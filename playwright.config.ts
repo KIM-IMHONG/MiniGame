@@ -7,12 +7,12 @@ export default defineConfig({
   use: {
     headless: true,
     viewport: { width: 375, height: 812 },
-    baseURL: 'http://localhost:3000',
+    baseURL: 'http://localhost:8081',
   },
   webServer: {
-    command: 'npx serve packages/app-template/dist -l 3000 -s',
-    port: 3000,
-    timeout: 10000,
+    command: 'cd packages/app-template && CI=1 npx expo start --web --port 8081',
+    port: 8081,
+    timeout: 30000,
     reuseExistingServer: true,
   },
   projects: [
