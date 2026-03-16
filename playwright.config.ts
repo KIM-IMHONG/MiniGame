@@ -33,6 +33,14 @@ export default defineConfig({
       },
       testMatch: 'sudoku.spec.ts',
     },
+    {
+      name: 'dodge-poop',
+      use: {
+        browserName: 'chromium',
+        baseURL: 'http://localhost:8084',
+      },
+      testMatch: 'dodge-poop.spec.ts',
+    },
   ],
   webServer: [
     {
@@ -50,6 +58,12 @@ export default defineConfig({
     {
       command: 'cd packages/app-sudoku && CI=1 npx expo start --web --port 8083',
       port: 8083,
+      timeout: 30000,
+      reuseExistingServer: true,
+    },
+    {
+      command: 'cd packages/app-dodge-poop && CI=1 npx expo start --web --port 8084',
+      port: 8084,
       timeout: 30000,
       reuseExistingServer: true,
     },
