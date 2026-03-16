@@ -7,18 +7,37 @@ export default defineConfig({
   use: {
     headless: true,
     viewport: { width: 375, height: 812 },
-    baseURL: 'http://localhost:8081',
-  },
-  webServer: {
-    command: 'cd packages/app-template && CI=1 npx expo start --web --port 8081',
-    port: 8081,
-    timeout: 30000,
-    reuseExistingServer: true,
   },
   projects: [
     {
-      name: 'chromium',
-      use: { browserName: 'chromium' },
+      name: 'demo-app',
+      use: {
+        browserName: 'chromium',
+        baseURL: 'http://localhost:8081',
+      },
+      testMatch: 'demo-app.spec.ts',
+    },
+    {
+      name: 'bubble-shooter',
+      use: {
+        browserName: 'chromium',
+        baseURL: 'http://localhost:8082',
+      },
+      testMatch: 'bubble-shooter.spec.ts',
+    },
+  ],
+  webServer: [
+    {
+      command: 'cd packages/app-template && CI=1 npx expo start --web --port 8081',
+      port: 8081,
+      timeout: 30000,
+      reuseExistingServer: true,
+    },
+    {
+      command: 'cd packages/app-bubble-shooter && CI=1 npx expo start --web --port 8082',
+      port: 8082,
+      timeout: 30000,
+      reuseExistingServer: true,
     },
   ],
 });

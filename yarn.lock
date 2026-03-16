@@ -2306,6 +2306,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/jest@npm:^29.5.0":
+  version: 29.5.14
+  resolution: "@types/jest@npm:29.5.14"
+  dependencies:
+    expect: "npm:^29.0.0"
+    pretty-format: "npm:^29.0.0"
+  checksum: 10c0/18e0712d818890db8a8dab3d91e9ea9f7f19e3f83c2e50b312f557017dc81466207a71f3ed79cf4428e813ba939954fa26ffa0a9a7f153181ba174581b1c2aed
+  languageName: node
+  linkType: hard
+
 "@types/matter-js@npm:^0.19.0":
   version: 0.19.8
   resolution: "@types/matter-js@npm:0.19.8"
@@ -2543,6 +2553,28 @@ __metadata:
   checksum: 10c0/57b06ae984bc32a0d22592c87384cd88fe4511b1dd7581497831c56d41939c8a001b28e7b853e1450f2bf61992dfcaa8ae2d0d161a0a90c4fb631ef07098fbac
   languageName: node
   linkType: hard
+
+"app-bubble-shooter@workspace:packages/app-bubble-shooter":
+  version: 0.0.0-use.local
+  resolution: "app-bubble-shooter@workspace:packages/app-bubble-shooter"
+  dependencies:
+    "@expo/metro-runtime": "npm:~55.0.6"
+    "@shared/core": "workspace:*"
+    "@shared/game-engine": "workspace:*"
+    "@shared/ui": "workspace:*"
+    "@types/jest": "npm:^29.5.0"
+    "@types/react": "npm:~19.2.2"
+    expo: "npm:~55.0.6"
+    expo-status-bar: "npm:~55.0.4"
+    jest: "npm:^29.7.0"
+    react: "npm:19.2.0"
+    react-dom: "npm:19.2.0"
+    react-native: "npm:0.83.2"
+    react-native-web: "npm:~0.21.0"
+    ts-jest: "npm:^29.1.0"
+    typescript: "npm:~5.9.2"
+  languageName: unknown
+  linkType: soft
 
 "app-template@workspace:packages/app-template":
   version: 0.0.0-use.local
@@ -3649,7 +3681,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expect@npm:^29.7.0":
+"expect@npm:^29.0.0, expect@npm:^29.7.0":
   version: 29.7.0
   resolution: "expect@npm:29.7.0"
   dependencies:
@@ -6498,7 +6530,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^29.7.0":
+"pretty-format@npm:^29.0.0, pretty-format@npm:^29.7.0":
   version: 29.7.0
   resolution: "pretty-format@npm:29.7.0"
   dependencies:
