@@ -133,6 +133,9 @@ export class BubbleShooterEngine {
         this.state.score += points;
 
         this.state.phase = 'popping';
+
+        // 팝 애니메이션 후 자동 전환
+        setTimeout(() => this.finishPopping(), 300);
       } else {
         // 못 터뜨리면 콤보 리셋
         this.state.combo = 0;

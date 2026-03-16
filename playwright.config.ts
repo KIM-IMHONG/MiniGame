@@ -25,6 +25,14 @@ export default defineConfig({
       },
       testMatch: 'bubble-shooter.spec.ts',
     },
+    {
+      name: 'sudoku',
+      use: {
+        browserName: 'chromium',
+        baseURL: 'http://localhost:8083',
+      },
+      testMatch: 'sudoku.spec.ts',
+    },
   ],
   webServer: [
     {
@@ -36,6 +44,12 @@ export default defineConfig({
     {
       command: 'cd packages/app-bubble-shooter && CI=1 npx expo start --web --port 8082',
       port: 8082,
+      timeout: 30000,
+      reuseExistingServer: true,
+    },
+    {
+      command: 'cd packages/app-sudoku && CI=1 npx expo start --web --port 8083',
+      port: 8083,
       timeout: 30000,
       reuseExistingServer: true,
     },

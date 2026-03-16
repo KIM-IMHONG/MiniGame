@@ -2576,6 +2576,28 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"app-sudoku@workspace:packages/app-sudoku":
+  version: 0.0.0-use.local
+  resolution: "app-sudoku@workspace:packages/app-sudoku"
+  dependencies:
+    "@expo/metro-runtime": "npm:~55.0.6"
+    "@shared/core": "workspace:*"
+    "@shared/game-engine": "workspace:*"
+    "@shared/ui": "workspace:*"
+    "@types/jest": "npm:^29.5.0"
+    "@types/react": "npm:~19.2.2"
+    expo: "npm:~55.0.6"
+    expo-status-bar: "npm:~55.0.4"
+    jest: "npm:^29.7.0"
+    react: "npm:19.2.0"
+    react-dom: "npm:19.2.0"
+    react-native: "npm:0.83.2"
+    react-native-web: "npm:~0.21.0"
+    ts-jest: "npm:^29.1.0"
+    typescript: "npm:~5.9.2"
+  languageName: unknown
+  linkType: soft
+
 "app-template@workspace:packages/app-template":
   version: 0.0.0-use.local
   resolution: "app-template@workspace:packages/app-template"
