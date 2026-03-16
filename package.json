@@ -14,6 +14,8 @@
     "create-app": "bash scripts/create-app.sh"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "serve": "^14.2.6",
     "turbo": "^2.0.0",
     "typescript": "~5.3.3"
   }
