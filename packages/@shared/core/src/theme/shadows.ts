@@ -1,5 +1,3 @@
-import { Platform } from 'react-native';
-
 export interface ShadowStyle {
   shadowColor: string;
   shadowOffset: { width: number; height: number };
